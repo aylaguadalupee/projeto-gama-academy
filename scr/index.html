@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+
+    <!--Cabeçalho -->
+    <header  class="header">
+        <a href="">InfoJob</a>
+
+    <!-- Iniciando o  menu -->
+    <nav>
+        <ul class="menu"> 
+            <li> 
+                <a href="#">Home</a>
+                <a href="#">Cadastro</a>
+                <a href="#">Vagas</a>
+            </li>
+        </ul>
+    </nav>
+
+    </header>
+
+     <!-- Iniciando o Container -->
+        <div class="container"> 
+            <span> Crie sua conta!</span>
+         
+    <!-- Iniciando o formulario -->
+         <div class="container-form">
+            
+            <form name="formulario" action="#" onsubmit="valida()"> 
+                    <div class="container_input"> 
+                        <label for="cpf">CPF</label>
+                        <input class="camp" type="text" id="cpf" maxlength="14" autocomplete="off"  placeholder="000.000.000-00" required>
+                    </div>
+            
+
+                <div class="container_input"> 
+                    <label for="nome">Nome Completo</label>
+                    <input class="camp" type="text" id="name" placeholder="Nome Completo" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="nasc">Data de nascimento</label>
+                    <input class="camp" type="date" id="nasc" required>
+                </div>
+
+               
+                <div class="container_input"> 
+                    <label for="cep">CEP</label>
+                    <input class="camp" type="text" maxlenght="9" id="cep" placeholder="00000-000" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="logradouro">Logradouro</label>
+                    <input class="camp" type="text" id="logradouro" placeholder="Logradouro" required>
+                </div>
+                
+                <div class="container_input"> 
+                    <label for="numero">Numero</label>
+                    <input class="camp" type="number" id="numero" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="bairro">Bairro</label>
+                    <input class="camp" type="text" id="bairro" placeholder="Numero" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="localidade">Cidade</label>
+                    <input class="camp" type="text" id="localidade" placeholder="Cidade" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="uf">Estado</label>                    
+                    <input class="camp" type="text" id="uf" placeholder="UF" required>
+                </div>
+                
+                <div class="container_input"> 
+                    <label for="telefone">Telefone</label>
+                    <input class="camp" type="tel" id="telefone" placeholder="(00) 88888-8888" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="email">E-mail</label>
+                    <input class="camp" type="email" id="email" placeholder="email@email.com" required>
+                </div>
+
+                <div class="container_input"> 
+                    <label for="cargo">Cargo Desejado</label>
+                    <input class="camp" type="text" id="cargo" placeholder="Analista de Sistema" required>
+                </div>
+
+
+                        
+                  <!-- Botao -->
+                  <div class="botao">
+                    <input type="submit">
+                </div>
+   
+              </form>
+           
+        </div>
+    </div>
+
+
+<script src="script.js"> 
+</script>
+
+</body>
+</html>
